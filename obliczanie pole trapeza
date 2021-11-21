@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+int main() 
+{
+  float a;
+  float b;
+  float h;
+  std::cout << "Witaj w programie obliczającego pole trapezu!\n";
+  std::cout << "Proszę podaj dane do boku a:\n";
+  std::cin >> a;
+  std::cout << "Proszę podaj dane do boku b:\n";
+  std::cin >> b;
+  std::cout << "Proszę podaj dane do wysokości h:\n";
+  std::cin >> h;
+
+  if (a > 0 and b > 0 and h > 0)
+  {
+  std::cout << "bok a:" << a << "\n";
+  std::cout << "bok b:" << b << "\n";
+  std::cout << "wysokość h:" << h << "\n";
+  std::cout << "Wynik:\n";
+
+  std::cout << (a+b) * h/2;
+  }
+  else
+  {
+  std:cout << "Wszystkie podane wartości muszą być dodatnie\n";
+  }
+  } 
