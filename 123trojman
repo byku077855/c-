@@ -1,0 +1,56 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+int l1=123, l2=456;
+
+ 
+
+int dodawanie(int l1, int l2)
+{
+l2=321;
+l1=654;    
+return l1+l2;    
+}
+
+ 
+
+void trojmian(float &a,float &b, float &c){
+    float delta,x1,x2;
+    delta=b*b-4*a*c;
+    
+    if(delta>0){
+
+ 
+
+    x1=(-b-sqrt(delta))/2*a;
+    x2=(-b+sqrt(delta))/2*a;
+    a=x1;
+    b=x2;
+    } 
+    c=delta;
+}
+
+ 
+
+
+int main(int argc, char** argv) {
+    
+
+ 
+
+    cout<<"l1="<<l1<<" l2="<<l2<<endl;
+    
+    dodawanie(l1,l2);
+    cout<<"l1="<<l1<<" l2="<<l2<<endl;
+float a=1,b=2,c=-3;
+trojmian(a,b,c);
+
+ 
+
+if(c>=0)cout<<"x1="<<a<<" x2="<<b;
+
+ 
+
+    return 0;
+}
