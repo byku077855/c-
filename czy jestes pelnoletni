@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+int main() 
+{
+  float aktualnyrok = 2021;
+  float dataurodzenia;
+  std::cout << "Witaj w programie obliczającego czy jestes pelnoletni!\n";
+  std::cout << "Proszę rok urodzenia:\n";
+  std::cin >> dataurodzenia;
+
+  if (aktualnyrok - dataurodzenia >= 18)
+  {
+  std::cout << "Jestes pelnoletni\n";
+  }
+  else
+  {
+  std:cout << "Nie jestes pelnoletni gluptasku nie mozesz pic piwa jeszcze\n";
+  }
+  } 
