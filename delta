@@ -1,0 +1,27 @@
+#include <iostream>
+#include <cstdlib>
+#include <time.h>
+#include <math.h>
+using namespace std;
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+int main()
+{
+int delta;
+int a;
+int b;
+int c;
+int x1;
+int x2;
+std::cout << "Podaj liczbe b"<<"\n";
+std::cin >> b;
+std::cout << "Podaj liczbe a"<<"\n";
+std::cin >> a;
+std::cout << "Podaj liczbe c"<<"\n";
+std::cin >> c;
+delta=b*b-4*a*c;
+std::cout << "Delta wynosi:"<< delta <<"\n";
+x1=(-b-sqrt(delta))/(2*a);
+x2=(-b+sqrt(delta))/(2*a);
+std::cout << "X1 wynosi:"<< x1 <<"\n";
+std::cout << "X2 wynosi:"<< x2 <<"\n";
+}
