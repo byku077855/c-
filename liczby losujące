@@ -1,0 +1,20 @@
+#include <iostream>
+#include <cstdlib>
+#include <time.h>
+using namespace std;
+/* run this program using the console pauser or add your own getch,
+*/
+int main()
+{
+srand(time(NULL));
+int liczbalosujaca;
+int zakrespierwszej;
+int zakresdrugiej;
+cout << "Podaj zakres liczb losujących między sobą\n";
+cout << "Od:";
+cin >> zakrespierwszej;
+cout << "Do:";
+cin >> zakresdrugiej;
+liczbalosujaca=rand()%zakresdrugiej-zakrespierwszej;
+cout << "" << liczbalosujaca << "\n";
+}
