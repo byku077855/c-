@@ -1,0 +1,27 @@
+#include <iostream>
+#include <math.h>
+#include <time.h>
+#include <cstdlib>
+
+using namespace std;
+int main()
+{
+std::cout << "Witaj w menu gry!"<<"\n";
+std::cout << "1) Nowa gra!"<<"\n";
+std::cout << "2) Wczytaj gre!"<<"\n";
+std::cout << "3) Ustawienia!"<<"\n";
+std::cout << "4) Wyjdz z gry!"<<"\n";
+int selection = 0;
+std::cout << "Wybierz opcje"<<"\n";
+std::cin >> selection;
+
+switch(selection)
+{
+case 1:
+std:cout << "Wybrales nowa gra!"<<"\n";
+break;
+}
+
+
+
+}
